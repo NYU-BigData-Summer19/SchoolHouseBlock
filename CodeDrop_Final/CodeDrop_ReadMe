@@ -1,0 +1,11 @@
+School House Block
+by Amery Chang and Alex Crain
+
+The major code-related tasks we needed to perform were to collect data and to clean and transform that data such that it would be useful and usable for our application. 
+
+In Ohio_Public_SchoolsCollection, we used Python in order to perform geocoding via the Google Geocoding API 
+(https://developers.google.com/maps/documentation/geocoding/start). While we were able to collect a directory of public schools in Ohio, these did not incude latitude and longitude, which are needed to plot maps in Tableau. 
+
+In clean_public_schools, Ohio_Charter_Cleaning, and Redfin_Cleaning, we perform cleaning, primarily using SparkSQL. Since we already had data in a tabular format, it was relatively easy to put the data into a useful schema. 
+
+Finally, we produced visualizations in Tableau, and were able to successfully create a working prototype of a usable application.
