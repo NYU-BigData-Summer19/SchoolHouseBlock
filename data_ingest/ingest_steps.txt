@@ -1,0 +1,17 @@
+Downloaded Ohio School Data from:
+
+https://reportcard.education.ohio.gov/download
+
+Moved data from local directory to Dumbo with shell commands:
+
+scp *.csv ajc867@access.cims.nyu.edu:
+
+Then, from CIMS:
+
+scp *.csv ajc867@dumbo.hpc.nyu.edu:
+
+Then, from Dumbo:
+
+hdfs dfs -mkdir schoolhouseblock 
+hdfs dfs -put *.csv schoolhouseblock
+
